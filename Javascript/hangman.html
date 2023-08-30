@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hangman Game</title>
+  <style>
+    #word-container {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hangman Game</h1>
+  <div id="word-contain"></div>
+  <div id="guess-contain">
+    <label>Guess a letter: </label>
+    <input type="text" id="letter-input" maxlength="1">
+    <button id="guess-btn" onclick="checking()">Guess</button>
+  </div>
+  <div>
+    <pre id="hangman_palce"></pre>
+  </div>
+  <script src="hangman.js"></script>
+</body>
+</html>
